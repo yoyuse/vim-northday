@@ -1,0 +1,533 @@
+// vim:set ts=4 sts=4 sw=4 tw=0 expandtab smartindent:
+// 2022-01-30
+// 2022-01-29
+
+@name 'northday';
+@maintainer 'yoyuse <yoyuse@gmail.com>';
+@license 'MIT';
+@background light;
+
+$hue: 210;
+
+$bg: hsl($hue, 0%, 100%);
+$fg: hsl($hue, 16%, 20%);
+$boldfg:    $brblack;
+$selectionbg: hsl($hue, 47%, 93%);
+$cursorbg:  $brblack;
+$commentfg: hsl($hue,  9%, 67%);
+$palefg:    hsl($hue, 16%, 80%);
+$modelinebg: hsl($hue, 16%, 80%);
+$fringebg:  hsl($hue, 50%, 97%);
+$inactivefg: $black;
+
+$white:     hsl(210, 47%, 93%);
+$red:       hsl(340, 50%, 60%);
+$green:     hsl(150, 29%, 47%);
+$yellow:    hsl( 80, 43%, 47%);
+$blue:      hsl(210, 43%, 53%);
+$magenta:   hsl(240, 60%, 67%);
+$cyan:      hsl(180, 38%, 43%);
+$black:     hsl(210,  7%, 53%);
+
+$orange:    hsl( 20, 50%, 60%);
+$purple:    hsl(280, 50%, 60%);
+
+$brwhite:   hsl(210, 23%, 86%);
+$brred:     hsl(340, 43%, 47%);
+$brgreen:   hsl(150, 40%, 33%);
+$bryellow:  hsl( 80, 60%, 33%);
+$brblue:    hsl(210, 50%, 40%);
+$brmagenta: hsl(240, 40%, 53%);
+$brcyan:    hsl(180, 56%, 30%);
+$brblack:   hsl(210, 47%,  7%);
+
+$bgred:     hsl(340,100%, 90%);
+$bggreen:   hsl(150, 50%, 87%);
+$bgblue:    hsl(210,100%, 87%);
+$bgmagenta: hsl(240,100%, 90%);
+$bgcyan:    hsl(180, 60%, 83%);
+$bgpurple:  hsl(280,100%, 90%);
+
+// -------------------------------------------------------------------
+
+$t_bg: 231;
+$t_bgblue: 153;
+$t_bgcyan: 159;
+$t_bgmagenta: 189;
+$t_bgpurple: 225;
+$t_bgred: 224;
+$t_blue: 67;
+$t_brwhite: 253;
+$t_commentfg: 248;
+$t_cursorbg: 233;
+$t_cyan: 30;
+$t_fg: 236;
+$t_fringebg: 255;
+$t_green: 72;
+$t_inactivefg: 245;
+$t_magenta: 104;
+$t_palefg: 252;
+$t_purple: 134;
+$t_red: 168;
+$t_selectionbg: 255;
+
+// -------------------------------------------------------------------
+
+// used for the columns set with 'colorcolumn'
+ColorColumn {
+    ctermbg: $t_fringebg;
+    guibg: $fringebg;
+}
+// placeholder characters substituted for concealed text (see 'conceallevel')
+Conceal {
+    // guifg: $commentfg;
+}
+// character under the cursor
+Cursor {
+    ctermbg: $t_cursorbg;
+    guibg: $cursorbg;
+    ctermfg: $t_bg;
+    guifg: $bg;
+}
+// the character under the cursor when |language-mapping| is used (see 'guicursor')
+lCursor {
+}
+// like Cursor, but used when in IME mode |CursorIM|
+CursorIM {
+}
+// Screen-column at the cursor, when 'cursorcolumn' is set.
+CursorColumn {
+    ctermbg: $t_fringebg;
+    guibg: $fringebg;
+}
+// Screen-line at the cursor, when 'cursorline' is set. Low-priority if foreground (ctermfg OR guifg) is not set.
+CursorLine {
+    cterm: NONE;
+    gui: NONE;
+    ctermbg: $t_fringebg;
+    guibg: $fringebg;
+}
+// directory names (and other special names in listings)
+Directory {
+    ctermfg: $t_blue;
+    guifg: $blue;
+}
+// diff mode: Added line |diff.txt|
+DiffAdd {
+    ctermbg: $t_bgblue;
+    guibg: $bgblue;
+}
+// diff mode: Changed line |diff.txt|
+DiffChange {
+    ctermbg: $t_bgpurple;
+    guibg: $bgpurple;
+}
+// diff mode: Deleted line |diff.txt|
+DiffDelete {
+    cterm: NONE;
+    gui: NONE;
+    ctermbg: $t_bgred;
+    guibg: $bgred;
+    ctermfg: NONE;
+    guifg: NONE;
+}
+// diff mode: Changed text within a changed line |diff.txt|
+DiffText {
+    cterm: NONE;
+    gui: NONE;
+    ctermbg: $t_bgcyan;
+    guibg: $bgcyan;
+}
+// filler lines (~) after the end of the buffer. By default, this is highlighted like |hl-NonText|.
+EndOfBuffer {
+    ctermfg: $t_palefg;
+    guifg: $palefg;
+}
+// cursor in a focused terminal
+TermCursor {
+}
+// cursor in an unfocused terminal
+TermCursorNC {
+}
+// error messages on the command line
+ErrorMsg {
+    ctermbg: NONE;
+    guibg: NONE;
+    ctermfg: $t_red;
+    guifg: $red;
+}
+// the column separating vertically split windows
+VertSplit {
+    ctermbg: $t_fringebg;
+    guibg: $fringebg;
+    ctermfg: $t_fringebg;
+    guifg: $fringebg;
+}
+// line used for closed folds
+Folded {
+    ctermbg: $t_fringebg;
+    guibg: $fringebg;
+    ctermfg: $t_commentfg;
+    guifg: $commentfg;
+}
+// 'foldcolumn'
+FoldColumn {
+    ctermbg: $t_fringebg;
+    guibg: $fringebg;
+    ctermfg: $t_commentfg;
+    guifg: $commentfg;
+}
+// column where |signs| are displayed
+SignColumn {
+    ctermbg: $t_fringebg;
+    guibg: $fringebg;
+    ctermfg: $t_commentfg;
+    guifg: $commentfg;
+}
+// 'incsearch' highlighting; also used for the text replaced with ":s///c"
+IncSearch {
+    cterm: NONE;
+    gui: NONE;
+    ctermbg: $t_bgmagenta;
+    guibg: $bgmagenta;
+}
+// |:substitute| replacement text highlighting
+Substitute {
+}
+
+// Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
+LineNr {
+    ctermbg: NONE;
+    guibg: NONE;
+    ctermfg: $t_palefg;
+    guifg: $palefg;
+}
+// Line number for when the 'relativenumber' option is set, above the cursor line.
+LineNrAbove {
+}
+// Line number for when the 'relativenumber' option is set, below the cursor line.
+LineNrBelow {
+}
+// Like LineNr when 'cursorline' is set and 'cursorlineopt' contains "number" or is "both", for the cursor line.
+CursorLineNr {
+    ctermbg: $t_selectionbg;
+    guibg: $selectionbg;
+    ctermfg: $t_commentfg;
+    guifg: $commentfg;
+    cterm: bold;
+    gui: bold;
+}
+// The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
+MatchParen {
+    ctermbg: $t_bgcyan;
+    guibg: $bgcyan;
+}
+
+// 'showmode' message (e.g., "-- INSERT --")
+ModeMsg {
+    cterm: NONE;
+    gui: NONE;
+    ctermfg: $t_green;
+    guifg: $green;
+}
+// Area for messages and cmdline
+MsgArea {
+}
+// Separator for scrolled messages, `msgsep` flag of 'display'
+MsgSeparator {
+}
+// |more-prompt|
+MoreMsg {
+    cterm: NONE;
+    gui: NONE;
+    ctermfg: $t_palefg;
+    guifg: $palefg;
+}
+// '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
+NonText {
+    ctermfg: $t_palefg;
+    guifg: $palefg;
+}
+// normal text
+Normal {
+    ctermbg: $t_bg;
+    guibg: $bg;
+    ctermfg: $t_fg;
+    guifg: $fg;
+}
+// Normal text in floating windows.
+NormalFloat {
+}
+// normal text in non-current windows
+NormalNC {
+}
+// Popup menu: normal item.
+Pmenu {
+    ctermbg: $t_selectionbg;
+    guibg: $selectionbg;
+}
+// Popup menu: selected item.
+PmenuSel {
+    ctermbg: $t_bgmagenta;
+    guibg: $bgmagenta;
+}
+// Popup menu: scrollbar.
+PmenuSbar {
+    ctermbg: $t_inactivefg;
+    guibg: $inactivefg;
+}
+// Popup menu: Thumb of the scrollbar.
+PmenuThumb {
+    ctermbg: $t_red;
+    guibg: $red;
+}
+// |hit-enter| prompt and yes/no questions
+Question {
+    ctermfg: $t_green;
+    guifg: $green;
+}
+// Current |quickfix| item in the quickfix window. Combined with |hl-CursorLine| when the cursor is there.
+QuickFixLine {
+    ctermbg: $t_selectionbg;
+    guibg: $selectionbg;
+}
+// Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
+Search {
+    ctermbg: $t_bgpurple;
+    guibg: $bgpurple;
+}
+// Unprintable characters: text displayed differently from what it really is. But not 'listchars' whitespace. |hl-Whitespace|
+SpecialKey {
+    ctermfg: $t_green;
+    guifg: $green;
+}
+// Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.
+SpellBad {
+    cterm: undercurl;
+    gui: undercurl;
+    // ctermul: $t_red;
+    guisp: $red;
+}
+// Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
+SpellCap {
+    cterm: undercurl;
+    gui: undercurl;
+    // ctermul: $t_blue;
+    guisp: $blue;
+}
+// Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
+SpellLocal {
+    cterm: undercurl;
+    gui: undercurl;
+    // ctermul: $t_green;
+    guisp: $green;
+}
+// Word that is recognized by the spellchecker as one that is hardly ever used. |spell| Combined with the highlighting used otherwise.
+SpellRare {
+    cterm: undercurl;
+    gui: undercurl;
+    // ctermul: $t_purple;
+    guisp: $purple;
+}
+// status line of current window
+StatusLine {
+    cterm: NONE;
+    gui: NONE;
+    ctermbg: $t_brwhite;
+    guibg: $brwhite;
+    // guibg: $modelinebg;
+    ctermfg: $t_fg;
+    guifg: $fg;
+}
+// status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
+StatusLineNC {
+    cterm: NONE;
+    gui: NONE;
+    // guibg: $fringebg;
+    // guifg: $inactivefg;
+    ctermbg: $t_selectionbg;
+    guibg: $selectionbg;
+    ctermfg: $t_commentfg;
+    guifg: $commentfg;
+}
+// tab pages line, not active tab page label
+TabLine {
+    // guibg: $fringebg;
+    // guifg: $palefg;
+    ctermbg: $t_selectionbg;
+    guibg: $selectionbg;
+    ctermfg: $t_commentfg;
+    guifg: $commentfg;
+}
+// tab pages line, where there are no labels
+TabLineFill {
+    cterm: NONE;
+    gui: NONE;
+    // guibg: $fringebg;
+    ctermfg: NONE;
+    guifg: NONE;
+    ctermbg: $t_selectionbg;
+    guibg: $selectionbg;
+    // guifg: $commentfg;
+}
+// tab pages line, active tab page label
+TabLineSel {
+    cterm: NONE;
+    gui: NONE;
+    ctermbg: NONE;
+    guibg: NONE;
+    ctermfg: NONE;
+    guifg: NONE;
+}
+// titles for output from ":set all", ":autocmd" etc.
+Title {
+    cterm: NONE;
+    gui: NONE;
+    ctermfg: $t_green;
+    guifg: $green;
+}
+// Visual mode selection
+Visual {
+    ctermbg: $t_selectionbg;
+    guibg: $selectionbg;
+}
+// Visual mode selection when vim is "Not Owning the Selection".
+VisualNOS {
+    ctermbg: $t_selectionbg;
+    guibg: $selectionbg;
+}
+// warning messages
+WarningMsg {
+    ctermbg: NONE;
+    guibg: NONE;
+    ctermfg: $t_purple;
+    guifg: $purple;
+}
+// "nbsp", "space", "tab" and "trail" in 'listchars'
+Whitespace {
+}
+// current match in 'wildmenu' completion
+WildMenu {
+    ctermbg: $t_bgmagenta;
+    guibg: $bgmagenta;
+    ctermfg: NONE;
+    guifg: NONE;
+}
+
+// -------------------------------------------------------------------
+
+// any comment
+Comment {
+    ctermfg: $t_commentfg;
+    guifg: $commentfg;
+}
+
+// any constant
+Constant {
+    ctermfg: $t_cyan;
+    guifg: $cyan;
+}
+// String		a string constant: "this is a string"
+// Character	a character constant: 'c', '\n'
+// Number		a number constant: 234, 0xff
+// Boolean	a boolean constant: TRUE, false
+// Float		a floating point constant: 2.3e10
+
+// any variable name
+Identifier {
+    ctermfg: $t_blue;
+    guifg: $blue;
+}
+// Function	function name (also: methods for classes)
+
+// any statement
+Statement {
+    cterm: NONE;
+    gui: NONE;
+    ctermfg: $t_magenta;
+    guifg: $magenta;
+}
+// Conditional	if, then, else, endif, switch, etc.
+// Repeat		for, do, while, etc.
+// Label		case, default, etc.
+// Operator	"sizeof", "+", "*", etc.
+// Keyword	any other keyword
+// Exception	try, catch, throw
+
+// generic Preprocessor
+PreProc {
+    ctermfg: $t_green;
+    guifg: $green;
+}
+// Include	preprocessor #include
+// Define		preprocessor #define
+// Macro		same as Define
+// PreCondit	preprocessor #if, #else, #endif, etc.
+
+// int, long, char, etc.
+Type {
+    cterm: NONE;
+    gui: NONE;
+    ctermfg: $t_magenta;
+    guifg: $magenta;
+}
+// StorageClass	static, register, volatile, etc.
+// Structure	struct, union, enum, etc.
+// Typedef	A typedef
+
+// any special symbol
+Special {
+    ctermfg: $t_purple;
+    guifg: $purple;
+}
+// SpecialChar	special character in a constant
+// Tag		you can use CTRL-] on this
+// Delimiter	character that needs attention
+// SpecialComment	special things inside a comment
+// Debug		debugging statements
+
+// text that stands out, HTML links
+Underlined {
+    ctermfg: $t_blue;
+    guifg: $blue;
+    cterm: underline;
+    gui: underline;
+}
+
+// left blank, hidden  |hl-Ignore|
+Ignore {
+    ctermbg: NONE;
+    guibg: NONE;
+    ctermfg: NONE;
+    guifg: NONE;
+}
+
+// any erroneous construct
+Error {
+    cterm: NONE;
+    gui: NONE;
+    ctermbg: NONE;
+    guibg: NONE;
+    ctermfg: $t_red;
+    guifg: $red;
+}
+
+// anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+Todo {
+    cterm: NONE;
+    gui: NONE;
+    ctermbg: NONE;
+    guibg: NONE;
+    ctermfg: $t_green;
+    guifg: $green;
+}
+
+// -------------------------------------------------------------------
+// /Users/yuse/.local/share/nvim/site/pack/colorschemes/start/iceberg.vim/src/iceberg.vim
+
+// [vim-markdown](https://github.com/tpope/vim-markdown)
+@link markdownBold to Special;
+@link markdownCode to String;
+@link markdownCodeDelimiter to String;
+@link markdownHeadingDelimiter to Comment;
+@link markdownRule to Comment;
