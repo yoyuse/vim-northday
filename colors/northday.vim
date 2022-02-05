@@ -1,6 +1,6 @@
 " File:       northday.vim
 " Maintainer: yoyuse <yoyuse@gmail.com>
-" Modified:   2022-01-30 21:20+0900
+" Modified:   2022-02-05 18:00+0900
 " License:    MIT
 
 
@@ -48,7 +48,7 @@ hi! PmenuThumb ctermbg=168 guibg=#cc6588
 hi! Question ctermfg=72 guifg=#559a77
 hi! QuickFixLine ctermbg=255 guibg=#e4edf5
 hi! Search ctermbg=225 guibg=#eeccff
-hi! SpecialKey ctermfg=72 guifg=#559a77
+hi! SpecialKey ctermfg=252 guifg=#c3ccd4
 hi! SpellBad cterm=undercurl gui=undercurl guisp=#cc6588
 hi! SpellCap cterm=undercurl gui=undercurl guisp=#5387ba
 hi! SpellLocal cterm=undercurl gui=undercurl guisp=#559a77
@@ -62,6 +62,7 @@ hi! Title cterm=NONE gui=NONE ctermfg=72 guifg=#559a77
 hi! Visual ctermbg=255 guibg=#e4edf5
 hi! VisualNOS ctermbg=255 guibg=#e4edf5
 hi! WarningMsg ctermbg=NONE guibg=NONE ctermfg=134 guifg=#aa65cc
+hi! Whitespace ctermfg=252 guifg=#c3ccd4
 hi! WildMenu ctermbg=189 guibg=#ccccff ctermfg=NONE guifg=NONE
 hi! Comment ctermfg=248 guifg=#a3aab2
 hi! Constant ctermfg=30 guifg=#439797
@@ -73,7 +74,7 @@ hi! Special ctermfg=134 guifg=#aa65cc
 hi! Underlined ctermfg=67 guifg=#5387ba cterm=underline gui=underline
 hi! Ignore ctermbg=NONE guibg=NONE ctermfg=NONE guifg=NONE
 hi! Error cterm=NONE gui=NONE ctermbg=NONE guibg=NONE ctermfg=168 guifg=#cc6588
-hi! Todo cterm=NONE gui=NONE ctermbg=NONE guibg=NONE ctermfg=72 guifg=#559a77
+hi! Todo cterm=NONE gui=NONE ctermbg=255 guibg=#f3f7fb ctermfg=72 guifg=#559a77
 
 hi! link markdownBold Special
 hi! link markdownCode String

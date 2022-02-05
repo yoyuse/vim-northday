@@ -298,8 +298,8 @@ Search {
 }
 // Unprintable characters: text displayed differently from what it really is. But not 'listchars' whitespace. |hl-Whitespace|
 SpecialKey {
-    ctermfg: $t_green;
-    guifg: $green;
+    ctermfg: $t_palefg;
+    guifg: $palefg;
 }
 // Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.
 SpellBad {
@@ -405,6 +405,8 @@ WarningMsg {
 }
 // "nbsp", "space", "tab" and "trail" in 'listchars'
 Whitespace {
+    ctermfg: $t_palefg;
+    guifg: $palefg;
 }
 // current match in 'wildmenu' completion
 WildMenu {
@@ -516,8 +518,8 @@ Error {
 Todo {
     cterm: NONE;
     gui: NONE;
-    ctermbg: NONE;
-    guibg: NONE;
+    ctermbg: $t_fringebg;
+    guibg: $fringebg;
     ctermfg: $t_green;
     guifg: $green;
 }
