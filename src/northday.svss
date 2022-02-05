@@ -53,6 +53,7 @@ $bgpurple:  hsl(280,100%, 90%);
 $t_bg: 231;
 $t_bgblue: 153;
 $t_bgcyan: 159;
+$t_bggreen: 158;
 $t_bgmagenta: 189;
 $t_bgpurple: 225;
 $t_bgred: 224;
@@ -114,13 +115,13 @@ Directory {
 }
 // diff mode: Added line |diff.txt|
 DiffAdd {
-    ctermbg: $t_bgblue;
-    guibg: $bgblue;
+    ctermbg: $t_bggreen;
+    guibg: $bggreen;
 }
 // diff mode: Changed line |diff.txt|
 DiffChange {
-    ctermbg: $t_bgpurple;
-    guibg: $bgpurple;
+    ctermbg: $t_bgmagenta;
+    guibg: $bgmagenta;
 }
 // diff mode: Deleted line |diff.txt|
 DiffDelete {
@@ -135,8 +136,8 @@ DiffDelete {
 DiffText {
     cterm: NONE;
     gui: NONE;
-    ctermbg: $t_bgcyan;
-    guibg: $bgcyan;
+    ctermbg: $t_bgpurple;
+    guibg: $bgpurple;
 }
 // filler lines (~) after the end of the buffer. By default, this is highlighted like |hl-NonText|.
 EndOfBuffer {
@@ -265,6 +266,8 @@ NormalNC {
 Pmenu {
     ctermbg: $t_selectionbg;
     guibg: $selectionbg;
+    ctermfg: $t_fg;
+    guifg: $fg;
 }
 // Popup menu: selected item.
 PmenuSel {
@@ -526,6 +529,18 @@ Todo {
 
 // -------------------------------------------------------------------
 // /Users/yuse/.local/share/nvim/site/pack/colorschemes/start/iceberg.vim/src/iceberg.vim
+
+// diff
+
+diffAdded {
+    ctermfg: $t_green;
+    guifg: $green;
+}
+
+diffRemoved {
+    ctermfg: $t_red;
+    guifg: $red;
+}
 
 // [vim-markdown](https://github.com/tpope/vim-markdown)
 @link markdownBold to Special;
