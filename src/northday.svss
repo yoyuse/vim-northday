@@ -1,4 +1,5 @@
 // vim:set ts=4 sts=4 sw=4 tw=0 expandtab smartindent:
+// 2022-02-07
 // 2022-01-30
 // 2022-01-29
 
@@ -9,68 +10,68 @@
 
 $hue: 210;
 
-$bg: hsl($hue, 0%, 100%);
-$fg: hsl($hue, 16%, 20%);
-$boldfg:    $brblack;
-$selectionbg: hsl($hue, 47%, 93%);
-$cursorbg:  $brblack;
-$commentfg: hsl($hue,  9%, 67%);
-$palefg:    hsl($hue, 16%, 80%);
-$modelinebg: hsl($hue, 16%, 80%);
-$fringebg:  hsl($hue, 50%, 97%);
-$inactivefg: $black;
+$bg:          #ffffff; // hsl($hue, 0%, 100%);
+$fg:          #2b333b; // hsl($hue, 16%, 20%);
+$boldfg:      #091119; // $brblack;
+$selectionbg: #e6eef6; // hsl($hue, 47%, 93%);
+$cursorbg:    #091119; // $brblack;
+$commentfg:   #a2aab2; // hsl($hue,  9%, 67%);
+$palefg:      #c4ccd4; // hsl($hue, 16%, 80%);
+$modelinebg:  #c4ccd4; // hsl($hue, 16%, 80%);
+$fringebg:    #f3f7fb; // hsl($hue, 50%, 97%);
+$inactivefg:  #808890; // $black;
 
-$white:     hsl(210, 47%, 93%);
-$red:       hsl(340, 50%, 60%);
-$green:     hsl(150, 29%, 47%);
-$yellow:    hsl( 80, 43%, 47%);
-$blue:      hsl(210, 43%, 53%);
-$magenta:   hsl(240, 60%, 67%);
-$cyan:      hsl(180, 38%, 43%);
-$black:     hsl(210,  7%, 53%);
+$white:     #e6eef6; // hsl(210, 47%, 93%);
+$red:       #cc6688; // hsl(340, 50%, 60%);
+$green:     #559977; // hsl(150, 29%, 47%);
+$yellow:    #88aa44; // hsl( 80, 43%, 47%);
+$blue:      #5588bb; // hsl(210, 43%, 53%);
+$magenta:   #7777dd; // hsl(240, 60%, 67%);
+$cyan:      #449999; // hsl(180, 38%, 43%);
+$black:     #808890; // hsl(210,  7%, 53%);
 
-$orange:    hsl( 20, 50%, 60%);
-$purple:    hsl(280, 50%, 60%);
+$orange:    #cc8866; // hsl( 20, 50%, 60%);
+$purple:    #aa66cc; // hsl(280, 50%, 60%);
 
-$brwhite:   hsl(210, 23%, 86%);
-$brred:     hsl(340, 43%, 47%);
-$brgreen:   hsl(150, 40%, 33%);
-$bryellow:  hsl( 80, 60%, 33%);
-$brblue:    hsl(210, 50%, 40%);
-$brmagenta: hsl(240, 40%, 53%);
-$brcyan:    hsl(180, 56%, 30%);
-$brblack:   hsl(210, 47%,  7%);
+$brwhite:   #d5dde5; // hsl(210, 24%, 86%);
+$brred:     #aa4466; // hsl(340, 43%, 47%);
+$brgreen:   #337755; // hsl(150, 40%, 33%);
+$bryellow:  #668822; // hsl( 80, 60%, 33%);
+$brblue:    #336699; // hsl(210, 50%, 40%);
+$brmagenta: #5555bb; // hsl(240, 40%, 53%);
+$brcyan:    #227777; // hsl(180, 56%, 30%);
+$brblack:   #091119; // hsl(210, 47%,  7%);
 
-$bgred:     hsl(340,100%, 90%);
-$bggreen:   hsl(150, 50%, 87%);
-$bgblue:    hsl(210,100%, 87%);
-$bgmagenta: hsl(240,100%, 90%);
-$bgcyan:    hsl(180, 60%, 83%);
-$bgpurple:  hsl(280,100%, 90%);
+$bgred:     #ffccdd; // hsl(340,100%, 90%);
+$bggreen:   #cceedd; // hsl(150, 50%, 87%);
+$bgblue:    #bbddff; // hsl(210,100%, 87%);
+$bgmagenta: #ccccff; // hsl(240,100%, 90%);
+$bgcyan:    #bbeeee; // hsl(180, 60%, 83%);
+$bgpurple:  #eeccff; // hsl(280,100%, 90%);
 
 // -------------------------------------------------------------------
 
-$t_bg: 231;
-$t_bgblue: 153;
-$t_bgcyan: 159;
-$t_bggreen: 158;
-$t_bgmagenta: 189;
-$t_bgpurple: 225;
-$t_bgred: 224;
-$t_blue: 67;
-$t_brwhite: 253;
-$t_commentfg: 248;
-$t_cursorbg: 233;
-$t_cyan: 30;
-$t_fg: 236;
-$t_fringebg: 255;
-$t_green: 72;
-$t_inactivefg: 245;
-$t_magenta: 104;
-$t_palefg: 252;
-$t_purple: 134;
-$t_red: 168;
-$t_selectionbg: 255;
+$t_bg:          231; // #ffffff
+$t_bgblue:      153; // #afd7ff
+$t_bgcyan:      159; // #afffff
+$t_bggreen:     158; // #afffd7
+$t_bgmagenta:   189; // #d7d7ff
+$t_bgpurple:    225; // #ffd7ff
+$t_bgred:       224; // #ffd7d7
+$t_blue:        67;  // #5f87af
+$t_brwhite:     253; // #dadada
+$t_commentfg:   248; // #a8a8a8
+$t_cursorbg:    233; // #121212
+$t_cyan:        30;  // #008787
+$t_fg:          236; // #303030
+$t_fringebg:    255; // #eeeeee
+$t_green:       72;  // #5faf87
+$t_inactivefg:  245; // #8a8a8a
+$t_magenta:     104; // #8787d7
+$t_palefg:      252; // #d0d0d0
+$t_purple:      134; // #af5fd7
+$t_red:         168; // #d75f87
+$t_selectionbg: 255; // #eeeeee
 
 // -------------------------------------------------------------------
 
