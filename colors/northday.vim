@@ -1,6 +1,6 @@
 " File:       northday.vim
 " Maintainer: yoyuse <yoyuse@gmail.com>
-" Modified:   2022-02-07 18:40+0900
+" Modified:   2022-02-08 10:48+0900
 " License:    MIT
 
 
@@ -42,7 +42,7 @@ hi! MoreMsg cterm=NONE gui=NONE ctermfg=252 guifg=#c4ccd4
 hi! NonText ctermfg=252 guifg=#c4ccd4
 hi! Normal ctermbg=231 guibg=#ffffff ctermfg=236 guifg=#2b333b
 hi! Pmenu ctermbg=255 guibg=#e6eef6 ctermfg=236 guifg=#2b333b
-hi! PmenuSel ctermbg=189 guibg=#ccccff
+hi! PmenuSel ctermbg=189 guibg=#ccccff ctermfg=236 guifg=#2b333b
 hi! PmenuSbar ctermbg=245 guibg=#808890
 hi! PmenuThumb ctermbg=168 guibg=#cc6688
 hi! Question ctermfg=72 guifg=#559977
@@ -74,7 +74,7 @@ hi! Special ctermfg=134 guifg=#aa66cc
 hi! Underlined ctermfg=67 guifg=#5588bb cterm=underline gui=underline
 hi! Ignore ctermbg=NONE guibg=NONE ctermfg=NONE guifg=NONE
 hi! Error cterm=NONE gui=NONE ctermbg=NONE guibg=NONE ctermfg=168 guifg=#cc6688
-hi! Todo cterm=NONE gui=NONE ctermbg=255 guibg=#f3f7fb ctermfg=72 guifg=#559977
+hi! Todo cterm=NONE gui=NONE ctermbg=158 guibg=#cceedd ctermfg=72 guifg=#559977
 hi! diffAdded ctermfg=72 guifg=#559977
 hi! diffRemoved ctermfg=168 guifg=#cc6688
 

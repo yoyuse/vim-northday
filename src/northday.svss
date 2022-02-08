@@ -274,6 +274,8 @@ Pmenu {
 PmenuSel {
     ctermbg: $t_bgmagenta;
     guibg: $bgmagenta;
+    ctermfg: $t_fg;
+    guifg: $fg;
 }
 // Popup menu: scrollbar.
 PmenuSbar {
@@ -522,8 +524,8 @@ Error {
 Todo {
     cterm: NONE;
     gui: NONE;
-    ctermbg: $t_fringebg;
-    guibg: $fringebg;
+    ctermbg: $t_bggreen;
+    guibg: $bggreen;
     ctermfg: $t_green;
     guifg: $green;
 }
