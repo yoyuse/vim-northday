@@ -545,9 +545,13 @@ diffRemoved {
     guifg: $red;
 }
 
+// [CtrlP](https://github.com/ctrlpvim/ctrlp.vim)
+@link CtrlPPrtCursor to Cursor;
+@link CtrlPMatch to Search;
+
 // [vim-markdown](https://github.com/tpope/vim-markdown)
-@link markdownBold to Special;
-@link markdownCode to String;
-@link markdownCodeDelimiter to String;
+@link markdownBold to Statement;
+@link markdownCode to Special;
+@link markdownCodeDelimiter to Special;
 @link markdownHeadingDelimiter to Comment;
 @link markdownRule to Comment;

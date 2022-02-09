@@ -1,6 +1,6 @@
 " File:       northday.vim
 " Maintainer: yoyuse <yoyuse@gmail.com>
-" Modified:   2022-02-08 10:48+0900
+" Modified:   2022-02-09 18:07+0900
 " License:    MIT
 
 
@@ -78,8 +78,10 @@ hi! Todo cterm=NONE gui=NONE ctermbg=158 guibg=#cceedd ctermfg=72 guifg=#559977
 hi! diffAdded ctermfg=72 guifg=#559977
 hi! diffRemoved ctermfg=168 guifg=#cc6688
 
-hi! link markdownBold Special
-hi! link markdownCode String
-hi! link markdownCodeDelimiter String
+hi! link CtrlPPrtCursor Cursor
+hi! link CtrlPMatch Search
+hi! link markdownBold Statement
+hi! link markdownCode Special
+hi! link markdownCodeDelimiter Special
 hi! link markdownHeadingDelimiter Comment
 hi! link markdownRule Comment
