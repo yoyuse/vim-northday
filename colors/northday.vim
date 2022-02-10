@@ -1,6 +1,6 @@
 " File:       northday.vim
 " Maintainer: yoyuse <yoyuse@gmail.com>
-" Modified:   2022-02-09 18:07+0900
+" Modified:   2022-02-10 18:56+0900
 " License:    MIT
 
 
@@ -71,6 +71,7 @@ hi! Statement cterm=NONE gui=NONE ctermfg=104 guifg=#7777dd
 hi! PreProc ctermfg=72 guifg=#559977
 hi! Type cterm=NONE gui=NONE ctermfg=104 guifg=#7777dd
 hi! Special ctermfg=134 guifg=#aa66cc
+hi! Delimiter ctermfg=236 guifg=#2b333b
 hi! Underlined ctermfg=67 guifg=#5588bb cterm=underline gui=underline
 hi! Ignore ctermbg=NONE guibg=NONE ctermfg=NONE guifg=NONE
 hi! Error cterm=NONE gui=NONE ctermbg=NONE guibg=NONE ctermfg=168 guifg=#cc6688
@@ -78,6 +79,7 @@ hi! Todo cterm=NONE gui=NONE ctermbg=158 guibg=#cceedd ctermfg=72 guifg=#559977
 hi! diffAdded ctermfg=72 guifg=#559977
 hi! diffRemoved ctermfg=168 guifg=#cc6688
 
+hi! link vimContinue Comment
 hi! link CtrlPPrtCursor Cursor
 hi! link CtrlPMatch Search
 hi! link markdownBold Statement

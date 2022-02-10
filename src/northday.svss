@@ -491,6 +491,10 @@ Special {
 // SpecialChar	special character in a constant
 // Tag		you can use CTRL-] on this
 // Delimiter	character that needs attention
+Delimiter {
+    ctermfg: $t_fg;
+    guifg: $fg;
+}
 // SpecialComment	special things inside a comment
 // Debug		debugging statements
 
@@ -544,6 +548,9 @@ diffRemoved {
     ctermfg: $t_red;
     guifg: $red;
 }
+
+// vim
+@link vimContinue to Comment;
 
 // [CtrlP](https://github.com/ctrlpvim/ctrlp.vim)
 @link CtrlPPrtCursor to Cursor;
