@@ -24,8 +24,8 @@ function! s:build_palette() abort
   let col_error    = ["#e6eef6", "#cc6688", 255, 168] " #eeeeee #d75f87
   let col_warning  = ["#e6eef6", "#aa66cc", 255, 134] " #eeeeee #af5fd7
   let col_insert   = ["#e6eef6", "#44aa77", 255, 72]  " #eeeeee #5faf87
-  let col_replace  = ["#e6eef6", "#aa66cc", 255, 134] " #eeeeee #af5fd7
-  let col_visual   = ["#e6eef6", "#7777dd", 255, 104] " #eeeeee #8787d7
+  let col_replace  = ["#e6eef6", "#cc6688", 255, 168] " #eeeeee #d75f87
+  let col_visual   = ["#e6eef6", "#aa66cc", 255, 134] " #eeeeee #af5fd7
   let col_tabsel   = ["#e6eef6", "#808890", 255, 102] " #eeeeee #878787
 
   let p.normal.middle = [col_base]
