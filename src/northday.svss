@@ -18,7 +18,7 @@ $cursorbg:    #091119; // $brblack;
 $commentfg:   #a2aab2; // hsl($hue,  9%, 67%);
 $palefg:      #c4ccd4; // hsl($hue, 16%, 80%);
 $modelinebg:  #c4ccd4; // hsl($hue, 16%, 80%);
-$fringebg:    #f3f7fb; // hsl($hue, 50%, 97%);
+$fringebg:    #f2f6fa; // hsl($hue, 44%, 96%); // #f3f7fb; // hsl($hue, 50%, 97%);
 $inactivefg:  #808890; // $black;
 
 $white:     #e6eef6; // hsl(210, 47%, 93%);
