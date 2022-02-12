@@ -1,7 +1,3 @@
-" 2022-02-04
-" 2022-01-30
-" 2022-01-29
-
 let s:save_cpo = &cpo
 set cpo&vim
 
@@ -15,18 +11,18 @@ function! s:build_palette() abort
         \ 'visual':   {},
         \ 'tabline':  {}}
 
-  let col_base     = ["#808890", "#d5dde5", 102, 253] " #878787 #dadada
-  let col_edge     = ["#e6eef6", "#808890", 255, 102] " #eeeeee #878787
-  let col_gradient = ["#2b333b", "#bcc4cc", 236, 251] " #303030 #c6c6c6
-  let col_nc       = ["#808890", "#d5dde5", 102, 253] " #878787 #dadada
-  let col_tabfill  = ["#808890", "#d5dde5", 102, 253] " #878787 #dadada
-  let col_normal   = ["#e6eef6", "#5588bb", 255, 67]  " #eeeeee #5f87af
-  let col_error    = ["#e6eef6", "#cc6688", 255, 168] " #eeeeee #d75f87
-  let col_warning  = ["#e6eef6", "#aa66cc", 255, 134] " #eeeeee #af5fd7
-  let col_insert   = ["#e6eef6", "#44aa77", 255, 72]  " #eeeeee #5faf87
-  let col_replace  = ["#e6eef6", "#cc6688", 255, 168] " #eeeeee #d75f87
-  let col_visual   = ["#e6eef6", "#aa66cc", 255, 134] " #eeeeee #af5fd7
-  let col_tabsel   = ["#e6eef6", "#808890", 255, 102] " #eeeeee #878787
+  let col_base     = ["#808890", "#d5dde5", 102, 253]
+  let col_edge     = ["#e6eef6", "#808890", 255, 102]
+  let col_gradient = ["#2b333b", "#bcc4cc", 236, 251]
+  let col_nc       = ["#808890", "#d5dde5", 102, 253]
+  let col_tabfill  = ["#808890", "#d5dde5", 102, 253]
+  let col_normal   = ["#e6eef6", "#5588bb", 255, 67]
+  let col_error    = ["#e6eef6", "#cc6688", 255, 168]
+  let col_warning  = ["#e6eef6", "#aa66cc", 255, 134]
+  let col_insert   = ["#e6eef6", "#44aa77", 255, 72]
+  let col_replace  = ["#e6eef6", "#cc6688", 255, 168]
+  let col_visual   = ["#e6eef6", "#aa66cc", 255, 134]
+  let col_tabsel   = ["#e6eef6", "#808890", 255, 102]
 
   let p.normal.middle = [col_base]
   let p.normal.left = [col_normal, col_gradient]

@@ -87,8 +87,8 @@ Conceal {
 // character under the cursor
 Cursor {
     ctermbg: $t_cursorbg;
-    guibg: $cursorbg;
     ctermfg: $t_bg;
+    guibg: $cursorbg;
     guifg: $bg;
 }
 // the character under the cursor when |language-mapping| is used (see 'guicursor')
@@ -105,8 +105,8 @@ CursorColumn {
 // Screen-line at the cursor, when 'cursorline' is set. Low-priority if foreground (ctermfg OR guifg) is not set.
 CursorLine {
     cterm: NONE;
-    gui: NONE;
     ctermbg: $t_fringebg;
+    gui: NONE;
     guibg: $fringebg;
 }
 // directory names (and other special names in listings)
@@ -127,17 +127,17 @@ DiffChange {
 // diff mode: Deleted line |diff.txt|
 DiffDelete {
     cterm: NONE;
-    gui: NONE;
     ctermbg: $t_bgred;
-    guibg: $bgred;
     ctermfg: NONE;
+    gui: NONE;
+    guibg: $bgred;
     guifg: NONE;
 }
 // diff mode: Changed text within a changed line |diff.txt|
 DiffText {
     cterm: NONE;
-    gui: NONE;
     ctermbg: $t_bgpurple;
+    gui: NONE;
     guibg: $bgpurple;
 }
 // filler lines (~) after the end of the buffer. By default, this is highlighted like |hl-NonText|.
@@ -154,43 +154,43 @@ TermCursorNC {
 // error messages on the command line
 ErrorMsg {
     ctermbg: NONE;
-    guibg: NONE;
     ctermfg: $t_red;
+    guibg: NONE;
     guifg: $red;
 }
 // the column separating vertically split windows
 VertSplit {
     ctermbg: $t_fringebg;
-    guibg: $fringebg;
     ctermfg: $t_fringebg;
+    guibg: $fringebg;
     guifg: $fringebg;
 }
 // line used for closed folds
 Folded {
     ctermbg: $t_fringebg;
-    guibg: $fringebg;
     ctermfg: $t_commentfg;
+    guibg: $fringebg;
     guifg: $commentfg;
 }
 // 'foldcolumn'
 FoldColumn {
     ctermbg: $t_fringebg;
-    guibg: $fringebg;
     ctermfg: $t_commentfg;
+    guibg: $fringebg;
     guifg: $commentfg;
 }
 // column where |signs| are displayed
 SignColumn {
     ctermbg: $t_fringebg;
-    guibg: $fringebg;
     ctermfg: $t_commentfg;
+    guibg: $fringebg;
     guifg: $commentfg;
 }
 // 'incsearch' highlighting; also used for the text replaced with ":s///c"
 IncSearch {
     cterm: NONE;
-    gui: NONE;
     ctermbg: $t_bgmagenta;
+    gui: NONE;
     guibg: $bgmagenta;
 }
 // |:substitute| replacement text highlighting
@@ -200,8 +200,8 @@ Substitute {
 // Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
 LineNr {
     ctermbg: NONE;
-    guibg: NONE;
     ctermfg: $t_palefg;
+    guibg: NONE;
     guifg: $palefg;
 }
 // Line number for when the 'relativenumber' option is set, above the cursor line.
@@ -212,24 +212,23 @@ LineNrBelow {
 }
 // Like LineNr when 'cursorline' is set and 'cursorlineopt' contains "number" or is "both", for the cursor line.
 CursorLineNr {
-    ctermbg: $t_selectionbg;
-    guibg: $selectionbg;
-    ctermfg: $t_commentfg;
-    guifg: $commentfg;
     cterm: bold;
+    ctermbg: $t_selectionbg;
+    ctermfg: $t_commentfg;
     gui: bold;
+    guibg: $selectionbg;
+    guifg: $commentfg;
 }
 // The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
 MatchParen {
     ctermbg: $t_bgcyan;
     guibg: $bgcyan;
 }
-
 // 'showmode' message (e.g., "-- INSERT --")
 ModeMsg {
     cterm: NONE;
-    gui: NONE;
     ctermfg: $t_green;
+    gui: NONE;
     guifg: $green;
 }
 // Area for messages and cmdline
@@ -241,8 +240,8 @@ MsgSeparator {
 // |more-prompt|
 MoreMsg {
     cterm: NONE;
-    gui: NONE;
     ctermfg: $t_palefg;
+    gui: NONE;
     guifg: $palefg;
 }
 // '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
@@ -253,8 +252,8 @@ NonText {
 // normal text
 Normal {
     ctermbg: $t_bg;
-    guibg: $bg;
     ctermfg: $t_fg;
+    guibg: $bg;
     guifg: $fg;
 }
 // Normal text in floating windows.
@@ -266,15 +265,15 @@ NormalNC {
 // Popup menu: normal item.
 Pmenu {
     ctermbg: $t_selectionbg;
-    guibg: $selectionbg;
     ctermfg: $t_fg;
+    guibg: $selectionbg;
     guifg: $fg;
 }
 // Popup menu: selected item.
 PmenuSel {
     ctermbg: $t_bgmagenta;
-    guibg: $bgmagenta;
     ctermfg: $t_fg;
+    guibg: $bgmagenta;
     guifg: $fg;
 }
 // Popup menu: scrollbar.
@@ -309,51 +308,51 @@ SpecialKey {
 }
 // Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.
 SpellBad {
+    // ctermul: $t_red;
     cterm: undercurl;
     gui: undercurl;
-    // ctermul: $t_red;
     guisp: $red;
 }
 // Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
 SpellCap {
+    // ctermul: $t_blue;
     cterm: undercurl;
     gui: undercurl;
-    // ctermul: $t_blue;
     guisp: $blue;
 }
 // Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
 SpellLocal {
+    // ctermul: $t_green;
     cterm: undercurl;
     gui: undercurl;
-    // ctermul: $t_green;
     guisp: $green;
 }
 // Word that is recognized by the spellchecker as one that is hardly ever used. |spell| Combined with the highlighting used otherwise.
 SpellRare {
+    // ctermul: $t_purple;
     cterm: undercurl;
     gui: undercurl;
-    // ctermul: $t_purple;
     guisp: $purple;
 }
 // status line of current window
 StatusLine {
-    cterm: NONE;
-    gui: NONE;
-    ctermbg: $t_brwhite;
-    guibg: $brwhite;
     // guibg: $modelinebg;
+    cterm: NONE;
+    ctermbg: $t_brwhite;
     ctermfg: $t_fg;
+    gui: NONE;
+    guibg: $brwhite;
     guifg: $fg;
 }
 // status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
 StatusLineNC {
-    cterm: NONE;
-    gui: NONE;
     // guibg: $fringebg;
     // guifg: $inactivefg;
+    cterm: NONE;
     ctermbg: $t_selectionbg;
-    guibg: $selectionbg;
     ctermfg: $t_commentfg;
+    gui: NONE;
+    guibg: $selectionbg;
     guifg: $commentfg;
 }
 // tab pages line, not active tab page label
@@ -361,35 +360,35 @@ TabLine {
     // guibg: $fringebg;
     // guifg: $palefg;
     ctermbg: $t_selectionbg;
-    guibg: $selectionbg;
     ctermfg: $t_commentfg;
+    guibg: $selectionbg;
     guifg: $commentfg;
 }
 // tab pages line, where there are no labels
 TabLineFill {
-    cterm: NONE;
-    gui: NONE;
     // guibg: $fringebg;
-    ctermfg: NONE;
-    guifg: NONE;
-    ctermbg: $t_selectionbg;
-    guibg: $selectionbg;
     // guifg: $commentfg;
+    cterm: NONE;
+    ctermbg: $t_selectionbg;
+    ctermfg: NONE;
+    gui: NONE;
+    guibg: $selectionbg;
+    guifg: NONE;
 }
 // tab pages line, active tab page label
 TabLineSel {
     cterm: NONE;
-    gui: NONE;
     ctermbg: NONE;
-    guibg: NONE;
     ctermfg: NONE;
+    gui: NONE;
+    guibg: NONE;
     guifg: NONE;
 }
 // titles for output from ":set all", ":autocmd" etc.
 Title {
     cterm: NONE;
-    gui: NONE;
     ctermfg: $t_green;
+    gui: NONE;
     guifg: $green;
 }
 // Visual mode selection
@@ -405,8 +404,8 @@ VisualNOS {
 // warning messages
 WarningMsg {
     ctermbg: NONE;
-    guibg: NONE;
     ctermfg: $t_purple;
+    guibg: NONE;
     guifg: $purple;
 }
 // "nbsp", "space", "tab" and "trail" in 'listchars'
@@ -417,8 +416,8 @@ Whitespace {
 // current match in 'wildmenu' completion
 WildMenu {
     ctermbg: $t_bgmagenta;
-    guibg: $bgmagenta;
     ctermfg: NONE;
+    guibg: $bgmagenta;
     guifg: NONE;
 }
 
@@ -451,8 +450,8 @@ Identifier {
 // any statement
 Statement {
     cterm: NONE;
-    gui: NONE;
     ctermfg: $t_magenta;
+    gui: NONE;
     guifg: $magenta;
 }
 // Conditional	if, then, else, endif, switch, etc.
@@ -475,8 +474,8 @@ PreProc {
 // int, long, char, etc.
 Type {
     cterm: NONE;
-    gui: NONE;
     ctermfg: $t_magenta;
+    gui: NONE;
     guifg: $magenta;
 }
 // StorageClass	static, register, volatile, etc.
@@ -500,37 +499,37 @@ Delimiter {
 
 // text that stands out, HTML links
 Underlined {
-    ctermfg: $t_blue;
-    guifg: $blue;
     cterm: underline;
+    ctermfg: $t_blue;
     gui: underline;
+    guifg: $blue;
 }
 
 // left blank, hidden  |hl-Ignore|
 Ignore {
     ctermbg: NONE;
-    guibg: NONE;
     ctermfg: NONE;
+    guibg: NONE;
     guifg: NONE;
 }
 
 // any erroneous construct
 Error {
     cterm: NONE;
-    gui: NONE;
     ctermbg: NONE;
-    guibg: NONE;
     ctermfg: $t_red;
+    gui: NONE;
+    guibg: NONE;
     guifg: $red;
 }
 
 // anything that needs extra attention; mostly the keywords TODO FIXME and XXX
 Todo {
     cterm: NONE;
-    gui: NONE;
     ctermbg: $t_bggreen;
-    guibg: $bggreen;
     ctermfg: $t_green;
+    gui: NONE;
+    guibg: $bggreen;
     guifg: $green;
 }
 
