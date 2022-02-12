@@ -1,6 +1,6 @@
 " File:       northday.vim
 " Maintainer: yoyuse <yoyuse@gmail.com>
-" Modified:   2022-02-12 13:30+0900
+" Modified:   2022-02-12 21:00+0900
 " License:    MIT
 
 
@@ -78,6 +78,27 @@ hi! Error cterm=NONE ctermbg=NONE ctermfg=168 gui=NONE guibg=NONE guifg=#cc6688
 hi! Todo cterm=NONE ctermbg=194 ctermfg=72 gui=NONE guibg=#cceedd guifg=#44aa77
 hi! diffAdded ctermfg=72 guifg=#44aa77
 hi! diffRemoved ctermfg=168 guifg=#cc6688
+
+if has('nvim')
+  let g:terminal_color_0 = '#e6eef6'
+  let g:terminal_color_1 = '#cc6688'
+  let g:terminal_color_2 = '#44aa77'
+  let g:terminal_color_3 = '#88aa44'
+  let g:terminal_color_4 = '#5588bb'
+  let g:terminal_color_5 = '#7777dd'
+  let g:terminal_color_6 = '#449999'
+  let g:terminal_color_7 = '#808890'
+  let g:terminal_color_8 = '#d5dde5'
+  let g:terminal_color_9 = '#aa4466'
+  let g:terminal_color_10 = '#337755'
+  let g:terminal_color_11 = '#668822'
+  let g:terminal_color_12 = '#336699'
+  let g:terminal_color_13 = '#5555bb'
+  let g:terminal_color_14 = '#227777'
+  let g:terminal_color_15 = '#091119'
+else
+  let g:terminal_ansi_colors = ['#e6eef6', '#cc6688', '#44aa77', '#88aa44', '#5588bb', '#7777dd', '#449999', '#808890', '#d5dde5', '#aa4466', '#337755', '#668822', '#336699', '#5555bb', '#227777', '#091119']
+endif
 
 hi! link vimContinue Comment
 hi! link CtrlPPrtCursor Cursor

@@ -1,0 +1,55 @@
+# vim:set ts=4 sts=4 sw=4 tw=0 expandtab smartindent:
+
+$name: northday
+$maintainer: yoyuse <yoyuse@gmail.com>
+$license: MIT
+
+$background: light
+
+$bg:          #ffffff # hsl(210, 0%, 100%)
+$fg:          #2b333b # hsl(210, 16%, 20%)
+
+$bgcursor:    #091119 # hsl(210, 47%,  7%) # $brwhite
+$bgedge:      #808890 # hsl(210,  7%, 53%) # $white
+$bggradient:  #bcc4cc # hsl(210, 14%, 77%)
+$bgmodeline:  #c4ccd4 # hsl(210, 16%, 80%)
+$bgbase:      #d5dde5 # hsl(210, 24%, 87%) # $brblack
+$bgselection: #dee8f2 # hsl(210, 43%, 91%)
+$bgfringe:    #f2f6fa # hsl(210, 44%, 96%)
+
+$fgbold:      #091119 # hsl(210, 47%,  7%) # $brwhite
+$fginactive:  #808890 # hsl(210,  7%, 53%) # $white
+$fgcomment:   #a2aab2 # hsl(210,  9%, 67%)
+$fgpale:      #c4ccd4 # hsl(210, 16%, 80%)
+$fgedge:      #e6eef6 # hsl(210, 47%, 93%) # $black
+
+$black:     #e6eef6 # hsl(210, 47%, 93%)
+$white:     #808890 # hsl(210,  7%, 53%)
+$red:       #cc6688 # hsl(340, 50%, 60%)
+$orange:    #cc8866 # hsl( 20, 50%, 60%)
+$yellow:    #88aa44 # hsl( 80, 43%, 47%)
+$green:     #44aa77 # hsl(150, 43%, 47%)
+$cyan:      #449999 # hsl(180, 38%, 43%)
+$blue:      #5588bb # hsl(210, 43%, 53%)
+$magenta:   #7777dd # hsl(240, 60%, 67%)
+$purple:    #aa66cc # hsl(280, 50%, 60%)
+
+$brblack:   #d5dde5 # hsl(210, 24%, 86%)
+$brwhite:   #091119 # hsl(210, 47%,  7%)
+$brred:     #aa4466 # hsl(340, 43%, 47%)
+$brorange:  #aa6644 # hsl( 20, 43%, 47%)
+$bryellow:  #668822 # hsl( 80, 60%, 33%)
+$brgreen:   #337755 # hsl(150, 40%, 33%)
+$brcyan:    #227777 # hsl(180, 56%, 30%)
+$brblue:    #336699 # hsl(210, 50%, 40%)
+$brmagenta: #5555bb # hsl(240, 40%, 53%)
+$brpurple:  #8844aa # hsl(280, 43%, 47%)
+
+$bgred:     #ffccdd # hsl(340,100%, 90%)
+$bgorange:  #ffddcc # hsl( 20,100%, 90%)
+$bgyellow:  #ddeebb # hsl( 80, 60%, 83%)
+$bggreen:   #cceedd # hsl(150, 50%, 87%)
+$bgcyan:    #bbeeee # hsl(180, 60%, 83%)
+$bgblue:    #bbddff # hsl(210,100%, 87%)
+$bgmagenta: #ccccff # hsl(240,100%, 90%)
+$bgpurple:  #eeccff # hsl(280,100%, 90%)
