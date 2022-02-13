@@ -1,6 +1,6 @@
 " File:       northday.vim
 " Maintainer: yoyuse <yoyuse@gmail.com>
-" Modified:   2022-02-12 21:00+0900
+" Modified:   2022-02-13 13:37+0900
 " License:    MIT
 
 
@@ -19,7 +19,10 @@ let g:colors_name = 'northday'
 
 
 hi! ColorColumn ctermbg=255 guibg=#f2f6fa
+hi! Conceal ctermbg=255 guibg=#f2f6fa
 hi! Cursor ctermbg=233 ctermfg=231 guibg=#091119 guifg=#ffffff
+hi! lCursor guibg=#44aa77 guifg=#ffffff
+hi! CursorIM guibg=#cc6688 guifg=#ffffff
 hi! CursorColumn ctermbg=255 guibg=#f2f6fa
 hi! CursorLine cterm=NONE ctermbg=255 gui=NONE guibg=#f2f6fa
 hi! Directory ctermfg=67 guifg=#5588bb
@@ -28,8 +31,9 @@ hi! DiffChange ctermbg=189 guibg=#ccccff
 hi! DiffDelete cterm=NONE ctermbg=224 ctermfg=NONE gui=NONE guibg=#ffccdd guifg=NONE
 hi! DiffText cterm=NONE ctermbg=225 gui=NONE guibg=#eeccff
 hi! EndOfBuffer ctermfg=252 guifg=#c4ccd4
+hi! TermCursorNC ctermbg=253 ctermfg=231 guibg=#d5dde5 guifg=#ffffff
 hi! ErrorMsg ctermbg=NONE ctermfg=168 guibg=NONE guifg=#cc6688
-hi! VertSplit ctermbg=255 ctermfg=255 guibg=#f2f6fa guifg=#f2f6fa
+hi! VertSplit ctermbg=254 ctermfg=254 guibg=#dee8f2 guifg=#dee8f2
 hi! Folded ctermbg=255 ctermfg=248 guibg=#f2f6fa guifg=#a2aab2
 hi! FoldColumn ctermbg=255 ctermfg=248 guibg=#f2f6fa guifg=#a2aab2
 hi! SignColumn ctermbg=255 ctermfg=248 guibg=#f2f6fa guifg=#a2aab2
@@ -38,7 +42,7 @@ hi! LineNr ctermbg=NONE ctermfg=252 guibg=NONE guifg=#c4ccd4
 hi! CursorLineNr cterm=bold ctermbg=254 ctermfg=248 gui=bold guibg=#dee8f2 guifg=#a2aab2
 hi! MatchParen ctermbg=159 guibg=#bbeeee
 hi! ModeMsg cterm=NONE ctermfg=72 gui=NONE guifg=#44aa77
-hi! MoreMsg cterm=NONE ctermfg=252 gui=NONE guifg=#c4ccd4
+hi! MoreMsg cterm=NONE ctermfg=72 gui=NONE guifg=#44aa77
 hi! NonText ctermfg=252 guifg=#c4ccd4
 hi! Normal ctermbg=231 ctermfg=236 guibg=#ffffff guifg=#2b333b
 hi! Pmenu ctermbg=254 ctermfg=236 guibg=#dee8f2 guifg=#2b333b

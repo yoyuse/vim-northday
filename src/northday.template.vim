@@ -21,13 +21,13 @@ let g:colors_name = '$name'
 "" used for the columns set with 'colorcolumn'
 hi! ColorColumn ctermbg=$t_bgfringe guibg=$bgfringe
 "" placeholder characters substituted for concealed text (see 'conceallevel')
-" hi! Conceal
+hi! Conceal ctermbg=$t_bgfringe guibg=$bgfringe
 "" character under the cursor
 hi! Cursor ctermbg=$t_bgcursor ctermfg=$t_bg guibg=$bgcursor guifg=$bg
 "" the character under the cursor when |language-mapping| is used (see 'guicursor')
-" hi! lCursor
+hi! lCursor guibg=$green guifg=$bg
 "" like Cursor, but used when in IME mode |CursorIM|
-" hi! CursorIM
+hi! CursorIM guibg=$red guifg=$bg
 "" Screen-column at the cursor, when 'cursorcolumn' is set.
 hi! CursorColumn ctermbg=$t_bgfringe guibg=$bgfringe
 "" Screen-line at the cursor, when 'cursorline' is set. Low-priority if foreground (ctermfg OR guifg) is not set.
@@ -45,13 +45,13 @@ hi! DiffText cterm=NONE ctermbg=$t_bgpurple gui=NONE guibg=$bgpurple
 "" filler lines (~) after the end of the buffer. By default, this is highlighted like |hl-NonText|.
 hi! EndOfBuffer ctermfg=$t_fgpale guifg=$fgpale
 "" cursor in a focused terminal
-" hi! TermCursor
+" hi! TermCursor ctermbg=$t_bgcursor ctermfg=$t_bg guibg=$bgcursor guifg=$bg
 "" cursor in an unfocused terminal
-" hi! TermCursorNC
+hi! TermCursorNC ctermbg=$t_bgbase ctermfg=$t_bg guibg=$bgbase guifg=$bg
 "" error messages on the command line
 hi! ErrorMsg ctermbg=NONE ctermfg=$t_red guibg=NONE guifg=$red
 "" the column separating vertically split windows
-hi! VertSplit ctermbg=$t_bgfringe ctermfg=$t_bgfringe guibg=$bgfringe guifg=$bgfringe
+hi! VertSplit ctermbg=$t_bgselection ctermfg=$t_bgselection guibg=$bgselection guifg=$bgselection
 "" line used for closed folds
 hi! Folded ctermbg=$t_bgfringe ctermfg=$t_fgcomment guibg=$bgfringe guifg=$fgcomment
 "" 'foldcolumn'
@@ -61,13 +61,13 @@ hi! SignColumn ctermbg=$t_bgfringe ctermfg=$t_fgcomment guibg=$bgfringe guifg=$f
 "" 'incsearch' highlighting; also used for the text replaced with ":s///c"
 hi! IncSearch cterm=NONE ctermbg=$t_bgmagenta gui=NONE guibg=$bgmagenta
 "" |:substitute| replacement text highlighting
-" hi! Substitute
+" hi! Substitute ctermbg=$t_bgpurple guibg=$bgpurple
 "" Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
 hi! LineNr ctermbg=NONE ctermfg=$t_fgpale guibg=NONE guifg=$fgpale
 "" Line number for when the 'relativenumber' option is set, above the cursor line.
-" hi! LineNrAbove
+" hi! LineNrAbove ctermbg=NONE ctermfg=$t_fgpale guibg=NONE guifg=$fgpale
 "" Line number for when the 'relativenumber' option is set, below the cursor line.
-" hi! LineNrBelow
+" hi! LineNrBelow ctermbg=NONE ctermfg=$t_fgpale guibg=NONE guifg=$fgpale
 "" Like LineNr when 'cursorline' is set and 'cursorlineopt' contains "number" or is "both", for the cursor line.
 hi! CursorLineNr cterm=bold ctermbg=$t_bgselection ctermfg=$t_fgcomment gui=bold guibg=$bgselection guifg=$fgcomment
 "" The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
@@ -79,7 +79,7 @@ hi! ModeMsg cterm=NONE ctermfg=$t_green gui=NONE guifg=$green
 "" Separator for scrolled messages, `msgsep` flag of 'display'
 " hi! MsgSeparator
 "" |more-prompt|
-hi! MoreMsg cterm=NONE ctermfg=$t_fgpale gui=NONE guifg=$fgpale
+hi! MoreMsg cterm=NONE ctermfg=$t_green gui=NONE guifg=$green
 "" '@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also |hl-EndOfBuffer|.
 hi! NonText ctermfg=$t_fgpale guifg=$fgpale
 "" normal text
@@ -87,7 +87,7 @@ hi! Normal ctermbg=$t_bg ctermfg=$t_fg guibg=$bg guifg=$fg
 "" Normal text in floating windows.
 " hi! NormalFloat
 "" normal text in non-current windows
-" hi! NormalNC
+" hi! NormalNC ctermbg=$t_bgfringe guibg=$bgfringe
 "" Popup menu: normal item.
 hi! Pmenu ctermbg=$t_bgselection ctermfg=$t_fg guibg=$bgselection guifg=$fg
 "" Popup menu: selected item.
@@ -235,6 +235,10 @@ else
 endif
 
 "" -------------------------------------------------------------------
+" hi! link TermCursor Cursor
+" hi! link Substitute Search
+" hi! link LineNrAbove LineNr
+" hi! link LineNrBelow LineNr
 "" vim
 hi! link vimContinue Comment
 "" [CtrlP](https://github.com/ctrlpvim/ctrlp.vim)
