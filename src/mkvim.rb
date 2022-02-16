@@ -74,6 +74,8 @@ def square_distance(c1, c2)
 end
 
 $t_def = Hash.new
+$term2true = Hash.new
+# $true2term = Hash.new
 
 $def.each do |key, value|
   t_key = key.sub(/^\$/, "$t_")
@@ -82,10 +84,21 @@ $def.each do |key, value|
     target = ColorDef.new(r, g, b, rgb, nil)
     nearest = $termcolor.filter {|cd| cd}.sort_by {|cd| square_distance(cd, target)}[0]
     $t_def[t_key] = nearest.i
+    i = nearest.i
+    # $true2term[rgb] = i
+    $term2true[i] = $term2true[i].nil? ? [rgb] : ($term2true[i] + [rgb])
   end
 end
 
 $t_def.each {|key, value| $def[key] = value}
+
+$term2true.filter {|_, ary| 1 < ary.sort.uniq.length}.each do |i, ary|
+  truecolors = ary.sort.uniq.collect {|rgb|
+    names = $def.filter {|_, d| d == '#' + rgb}.collect{|name, _| name}
+    "\##{rgb} (#{names.join(' ')})"
+  }.join(" ")
+  $stderr.puts("#{i} (\##{$termcolor[i].rgb}) <- #{truecolors}")
+end
 
 # --------------------------------------------------------------------
 
