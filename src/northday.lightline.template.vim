@@ -48,7 +48,7 @@ function! s:build_palette() abort
 endfunction
 
 
-let g:lightline#colorscheme#northday#palette = s:build_palette()
+let g:lightline#colorscheme#$name#palette = s:build_palette()
 
 
 let &cpo = s:save_cpo
