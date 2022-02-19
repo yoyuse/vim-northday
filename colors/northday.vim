@@ -1,6 +1,6 @@
 " File:       northday.vim
 " Maintainer: yoyuse <yoyuse@gmail.com>
-" Modified:   2022-02-17 16:24+0900
+" Modified:   2022-02-19 17:07+0900
 " License:    MIT
 
 
@@ -26,18 +26,18 @@ hi! CursorIM guibg=#cc6688 guifg=#ffffff
 hi! CursorColumn ctermbg=255 guibg=#f2f6fa
 hi! CursorLine cterm=NONE ctermbg=255 gui=NONE guibg=#f2f6fa
 hi! Directory ctermfg=67 guifg=#5588bb
-hi! DiffAdd ctermbg=194 guibg=#cceedd
-hi! DiffChange ctermbg=189 guibg=#ccccff
-hi! DiffDelete cterm=NONE ctermbg=224 ctermfg=NONE gui=NONE guibg=#ffccdd guifg=NONE
-hi! DiffText cterm=NONE ctermbg=225 gui=NONE guibg=#eeccff
+hi! DiffAdd ctermbg=194 ctermfg=236 guibg=#cceedd guifg=#2b333b
+hi! DiffChange ctermbg=189 ctermfg=236 guibg=#ccccff guifg=#2b333b
+hi! DiffDelete cterm=NONE ctermbg=224 ctermfg=236 gui=NONE guibg=#ffccdd guifg=#2b333b
+hi! DiffText cterm=NONE ctermbg=225 ctermfg=236 gui=NONE guibg=#eeccff guifg=#2b333b
 hi! EndOfBuffer ctermfg=252 guifg=#c4ccd4
 hi! TermCursorNC ctermbg=253 ctermfg=231 guibg=#d5dde5 guifg=#ffffff
 hi! ErrorMsg ctermbg=NONE ctermfg=168 guibg=NONE guifg=#cc6688
-hi! VertSplit ctermbg=254 ctermfg=254 guibg=#dee8f2 guifg=#dee8f2
+hi! VertSplit ctermbg=253 ctermfg=253 guibg=#d5dde5 guifg=#d5dde5
 hi! Folded ctermbg=255 ctermfg=248 guibg=#f2f6fa guifg=#a2aab2
 hi! FoldColumn ctermbg=255 ctermfg=248 guibg=#f2f6fa guifg=#a2aab2
 hi! SignColumn ctermbg=255 ctermfg=248 guibg=#f2f6fa guifg=#a2aab2
-hi! IncSearch cterm=NONE ctermbg=189 gui=NONE guibg=#ccccff
+hi! IncSearch cterm=NONE ctermbg=189 ctermfg=236 gui=NONE guibg=#ccccff guifg=#2b333b
 hi! LineNr ctermbg=NONE ctermfg=252 guibg=NONE guifg=#c4ccd4
 hi! CursorLineNr cterm=bold ctermbg=254 ctermfg=248 gui=bold guibg=#dee8f2 guifg=#a2aab2
 hi! MatchParen ctermbg=159 guibg=#bbeeee
@@ -57,17 +57,17 @@ hi! SpellBad cterm=undercurl gui=undercurl guisp=#cc6688
 hi! SpellCap cterm=undercurl gui=undercurl guisp=#5588bb
 hi! SpellLocal cterm=undercurl gui=undercurl guisp=#44aa77
 hi! SpellRare cterm=undercurl gui=undercurl guisp=#aa66cc
-hi! StatusLine cterm=NONE ctermbg=253 ctermfg=236 gui=NONE guibg=#d5dde5 guifg=#2b333b
-hi! StatusLineNC cterm=NONE ctermbg=254 ctermfg=248 gui=NONE guibg=#dee8f2 guifg=#a2aab2
-hi! TabLine ctermbg=254 ctermfg=248 guibg=#dee8f2 guifg=#a2aab2
-hi! TabLineFill cterm=NONE ctermbg=254 ctermfg=NONE gui=NONE guibg=#dee8f2 guifg=NONE
+hi! StatusLine cterm=NONE ctermbg=252 ctermfg=236 gui=NONE guibg=#c4ccd4 guifg=#2b333b
+hi! StatusLineNC cterm=NONE ctermbg=253 ctermfg=248 gui=NONE guibg=#d5dde5 guifg=#a2aab2
+hi! TabLine cterm=NONE ctermbg=253 ctermfg=248 gui=NONE guibg=#d5dde5 guifg=#a2aab2
+hi! TabLineFill cterm=NONE ctermbg=253 ctermfg=NONE gui=NONE guibg=#d5dde5 guifg=NONE
 hi! TabLineSel cterm=NONE ctermbg=NONE ctermfg=NONE gui=NONE guibg=NONE guifg=NONE
 hi! Title cterm=NONE ctermfg=72 gui=NONE guifg=#44aa77
 hi! Visual ctermbg=254 guibg=#dee8f2
 hi! VisualNOS ctermbg=254 guibg=#dee8f2
 hi! WarningMsg ctermbg=NONE ctermfg=134 guibg=NONE guifg=#aa66cc
 hi! Whitespace ctermfg=252 guifg=#c4ccd4
-hi! WildMenu ctermbg=189 ctermfg=NONE guibg=#ccccff guifg=NONE
+hi! WildMenu ctermbg=189 ctermfg=236 guibg=#ccccff guifg=#2b333b
 hi! Comment ctermfg=248 guifg=#a2aab2
 hi! Constant ctermfg=73 guifg=#44aaaa
 hi! Identifier ctermfg=67 guifg=#5588bb

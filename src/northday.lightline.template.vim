@@ -11,18 +11,18 @@ function! s:build_palette() abort
         \ 'visual':   {},
         \ 'tabline':  {}}
 
-  let col_base     = ["$fginactive", "$bgbase", $t_fginactive, $t_bgbase]
+  let col_base     = ["$fgcomment", "$bgbase", $t_fgcomment, $t_bgbase]
   let col_edge     = ["$fgedge", "$bgedge", $t_fgedge, $t_bgedge]
   let col_gradient = ["$fg", "$bggradient", $t_fg, $t_bggradient]
-  let col_nc       = ["$fginactive", "$bgbase", $t_fginactive, $t_bgbase]
-  let col_tabfill  = ["$fginactive", "$bgbase", $t_fginactive, $t_bgbase]
+  let col_nc       = ["$fgcomment", "$bgbase", $t_fgcomment, $t_bgbase]
+  let col_tabfill  = ["$fgcomment", "$bgbase", $t_fgcomment, $t_bgbase]
   let col_normal   = ["$fgedge", "$blue", $t_fgedge, $t_blue]
   let col_error    = ["$fgedge", "$red", $t_fgedge, $t_red]
   let col_warning  = ["$fgedge", "$purple", $t_fgedge, $t_purple]
   let col_insert   = ["$fgedge", "$green", $t_fgedge, $t_green]
   let col_replace  = ["$fgedge", "$red", $t_fgedge, $t_red]
   let col_visual   = ["$fgedge", "$purple", $t_fgedge, $t_purple]
-  let col_tabsel   = ["$fgedge", "$bgedge", $t_fgedge, $t_bgedge]
+  let col_tabsel   = ["$fgedge", "$blue", $t_fgedge, $t_blue]
 
   let p.normal.middle = [col_base]
   let p.normal.left = [col_normal, col_gradient]

@@ -35,13 +35,13 @@ hi! CursorLine cterm=NONE ctermbg=$t_bgfringe gui=NONE guibg=$bgfringe
 "" directory names (and other special names in listings)
 hi! Directory ctermfg=$t_blue guifg=$blue
 "" diff mode: Added line |diff.txt|
-hi! DiffAdd ctermbg=$t_bggreen guibg=$bggreen
+hi! DiffAdd ctermbg=$t_bggreen ctermfg=$t_absblack guibg=$bggreen guifg=$absblack
 "" diff mode: Changed line |diff.txt|
-hi! DiffChange ctermbg=$t_bgmagenta guibg=$bgmagenta
+hi! DiffChange ctermbg=$t_bgmagenta ctermfg=$t_absblack guibg=$bgmagenta guifg=$absblack
 "" diff mode: Deleted line |diff.txt|
-hi! DiffDelete cterm=NONE ctermbg=$t_bgred ctermfg=NONE gui=NONE guibg=$bgred guifg=NONE
+hi! DiffDelete cterm=NONE ctermbg=$t_bgred ctermfg=$t_absblack gui=NONE guibg=$bgred guifg=$absblack
 "" diff mode: Changed text within a changed line |diff.txt|
-hi! DiffText cterm=NONE ctermbg=$t_bgpurple gui=NONE guibg=$bgpurple
+hi! DiffText cterm=NONE ctermbg=$t_bgpurple ctermfg=$t_absblack gui=NONE guibg=$bgpurple guifg=$absblack
 "" filler lines (~) after the end of the buffer. By default, this is highlighted like |hl-NonText|.
 hi! EndOfBuffer ctermfg=$t_fgpale guifg=$fgpale
 "" cursor in a focused terminal
@@ -51,7 +51,7 @@ hi! TermCursorNC ctermbg=$t_bgbase ctermfg=$t_bg guibg=$bgbase guifg=$bg
 "" error messages on the command line
 hi! ErrorMsg ctermbg=NONE ctermfg=$t_red guibg=NONE guifg=$red
 "" the column separating vertically split windows
-hi! VertSplit ctermbg=$t_bgselection ctermfg=$t_bgselection guibg=$bgselection guifg=$bgselection
+hi! VertSplit ctermbg=$t_bgbase ctermfg=$t_bgbase guibg=$bgbase guifg=$bgbase
 "" line used for closed folds
 hi! Folded ctermbg=$t_bgfringe ctermfg=$t_fgcomment guibg=$bgfringe guifg=$fgcomment
 "" 'foldcolumn'
@@ -59,7 +59,7 @@ hi! FoldColumn ctermbg=$t_bgfringe ctermfg=$t_fgcomment guibg=$bgfringe guifg=$f
 "" column where |signs| are displayed
 hi! SignColumn ctermbg=$t_bgfringe ctermfg=$t_fgcomment guibg=$bgfringe guifg=$fgcomment
 "" 'incsearch' highlighting; also used for the text replaced with ":s///c"
-hi! IncSearch cterm=NONE ctermbg=$t_bgmagenta gui=NONE guibg=$bgmagenta
+hi! IncSearch cterm=NONE ctermbg=$t_bgmagenta ctermfg=$t_absblack gui=NONE guibg=$bgmagenta guifg=$absblack
 "" |:substitute| replacement text highlighting
 " hi! Substitute ctermbg=$t_bgpurple guibg=$bgpurple
 "" Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
@@ -91,7 +91,7 @@ hi! Normal ctermbg=$t_bg ctermfg=$t_fg guibg=$bg guifg=$fg
 "" Popup menu: normal item.
 hi! Pmenu ctermbg=$t_bgselection ctermfg=$t_fg guibg=$bgselection guifg=$fg
 "" Popup menu: selected item.
-hi! PmenuSel ctermbg=$t_bgmagenta ctermfg=$t_fg guibg=$bgmagenta guifg=$fg
+hi! PmenuSel ctermbg=$t_bgmagenta ctermfg=$t_absblack guibg=$bgmagenta guifg=$absblack
 "" Popup menu: scrollbar.
 hi! PmenuSbar ctermbg=$t_fginactive guibg=$fginactive
 "" Popup menu: Thumb of the scrollbar.
@@ -113,13 +113,13 @@ hi! SpellLocal cterm=undercurl gui=undercurl guisp=$green
 "" Word that is recognized by the spellchecker as one that is hardly ever used. |spell| Combined with the highlighting used otherwise.
 hi! SpellRare cterm=undercurl gui=undercurl guisp=$purple
 "" status line of current window
-hi! StatusLine cterm=NONE ctermbg=$t_brblack ctermfg=$t_fg gui=NONE guibg=$brblack guifg=$fg
+hi! StatusLine cterm=NONE ctermbg=$t_bgmodeline ctermfg=$t_fg gui=NONE guibg=$bgmodeline guifg=$fg
 "" status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
-hi! StatusLineNC cterm=NONE ctermbg=$t_bgselection ctermfg=$t_fgcomment gui=NONE guibg=$bgselection guifg=$fgcomment
+hi! StatusLineNC cterm=NONE ctermbg=$t_bgbase ctermfg=$t_fgcomment gui=NONE guibg=$bgbase guifg=$fgcomment
 "" tab pages line, not active tab page label
-hi! TabLine ctermbg=$t_bgselection ctermfg=$t_fgcomment guibg=$bgselection guifg=$fgcomment
+hi! TabLine cterm=NONE ctermbg=$t_bgbase ctermfg=$t_fgcomment gui=NONE guibg=$bgbase guifg=$fgcomment
 "" tab pages line, where there are no labels
-hi! TabLineFill cterm=NONE ctermbg=$t_bgselection ctermfg=NONE gui=NONE guibg=$bgselection guifg=NONE
+hi! TabLineFill cterm=NONE ctermbg=$t_bgbase ctermfg=NONE gui=NONE guibg=$bgbase guifg=NONE
 "" tab pages line, active tab page label
 hi! TabLineSel cterm=NONE ctermbg=NONE ctermfg=NONE gui=NONE guibg=NONE guifg=NONE
 "" titles for output from ":set all", ":autocmd" etc.
@@ -133,7 +133,7 @@ hi! WarningMsg ctermbg=NONE ctermfg=$t_purple guibg=NONE guifg=$purple
 "" "nbsp", "space", "tab" and "trail" in 'listchars'
 hi! Whitespace ctermfg=$t_fgpale guifg=$fgpale
 "" current match in 'wildmenu' completion
-hi! WildMenu ctermbg=$t_bgmagenta ctermfg=NONE guibg=$bgmagenta guifg=NONE
+hi! WildMenu ctermbg=$t_bgmagenta ctermfg=$t_absblack guibg=$bgmagenta guifg=$absblack
 "" -------------------------------------------------------------------
 "" any comment
 hi! Comment ctermfg=$t_fgcomment guifg=$fgcomment
