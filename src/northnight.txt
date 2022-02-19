@@ -1,0 +1,57 @@
+# vim:set ts=4 sts=4 sw=4 tw=0 expandtab smartindent:
+# vim:set commentstring=#\ %s:
+
+$name: northnight
+$maintainer: yoyuse <yoyuse@gmail.com>
+$license: MIT
+
+$background: dark
+
+$bg:          #2b333b # #2c343c # #2b333b
+$fg:          #b3bbc3 # #b4bcc4 # #b3bbc3
+$absblack:    #2b333b
+
+$bgcursor:    #ffffff
+$bgedge:      #808890
+$bggradient:  #5e666e # #6f777f # #5d656d # #666e76
+$bgmodeline:  #5e666e
+$bgbase:      #4d555d # #4c545c # #4d555d
+$bgselection: #4d555d # #444c54 # #3c4650 # #444a50
+$bgfringe:    #333b43 # #343c44 # #363e46 # #3c444c
+
+$fgbold:      #d5dde5
+$fginactive:  #808890
+$fgcomment:   #6f777f
+$fgpale:      #4d555d # #4c545c # #5e666e
+$fgedge:      #2b333b # #2c343c # #4c545c
+
+$black:     #091119
+$white:     #808890
+$red:       #cc99aa # #cc6688
+$orange:    #ccaa99 # #cc8866
+$yellow:    #99aa77 # #88aa44
+$green:     #88aa99 # #44aa77
+$cyan:      #77aaaa # #44aaaa
+$blue:      #7799bb # #5588bb
+$magenta:   #9999dd # #7777dd
+$purple:    #bb99cc # #aa66cc
+
+$brblack:   #4d555d
+$brwhite:   #e6eef6
+$brred:     #ee88aa
+$brorange:  #eeaa88
+$bryellow:  #aacc66
+$brgreen:   #66cc99
+$brcyan:    #66cccc
+$brblue:    #77aadd
+$brmagenta: #9999ff
+$brpurple:  #cc88ee
+
+$bgred:     #cc99aa # #663344 # #885566
+$bgorange:  #ccaa99 # #664433 # #886655
+$bgyellow:  #99aa77 # #445522 # #667744
+$bggreen:   #88aa99 # #335544 # #557766
+$bgcyan:    #77aaaa # #225555 # #447777
+$bgblue:    #7799bb # #224466 # #446688
+$bgmagenta: #9999dd # #333366 # #555588
+$bgpurple:  #bb99cc # #553366 # #775588
