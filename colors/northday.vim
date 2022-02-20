@@ -1,6 +1,6 @@
 " File:       northday.vim
 " Maintainer: yoyuse <yoyuse@gmail.com>
-" Modified:   2022-02-19 17:07+0900
+" Modified:   2022-02-20 16:41+0900
 " License:    MIT
 
 
@@ -39,7 +39,7 @@ hi! FoldColumn ctermbg=255 ctermfg=248 guibg=#f2f6fa guifg=#a2aab2
 hi! SignColumn ctermbg=255 ctermfg=248 guibg=#f2f6fa guifg=#a2aab2
 hi! IncSearch cterm=NONE ctermbg=189 ctermfg=236 gui=NONE guibg=#ccccff guifg=#2b333b
 hi! LineNr ctermbg=NONE ctermfg=252 guibg=NONE guifg=#c4ccd4
-hi! CursorLineNr cterm=bold ctermbg=254 ctermfg=248 gui=bold guibg=#dee8f2 guifg=#a2aab2
+hi! CursorLineNr cterm=bold ctermbg=254 ctermfg=236 gui=bold guibg=#dee8f2 guifg=#2b333b
 hi! MatchParen ctermbg=159 guibg=#bbeeee
 hi! ModeMsg cterm=NONE ctermfg=72 gui=NONE guifg=#44aa77
 hi! MoreMsg cterm=NONE ctermfg=72 gui=NONE guifg=#44aa77
@@ -79,7 +79,7 @@ hi! Delimiter ctermfg=236 guifg=#2b333b
 hi! Underlined cterm=underline ctermfg=67 gui=underline guifg=#5588bb
 hi! Ignore ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
 hi! Error cterm=NONE ctermbg=NONE ctermfg=168 gui=NONE guibg=NONE guifg=#cc6688
-hi! Todo cterm=NONE ctermbg=194 ctermfg=72 gui=NONE guibg=#cceedd guifg=#44aa77
+hi! Todo cterm=NONE ctermbg=194 ctermfg=236 gui=NONE guibg=#cceedd guifg=#2b333b
 hi! diffAdded ctermfg=72 guifg=#44aa77
 hi! diffRemoved ctermfg=168 guifg=#cc6688
 

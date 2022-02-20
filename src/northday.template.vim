@@ -69,7 +69,7 @@ hi! LineNr ctermbg=NONE ctermfg=$t_fgpale guibg=NONE guifg=$fgpale
 "" Line number for when the 'relativenumber' option is set, below the cursor line.
 " hi! LineNrBelow ctermbg=NONE ctermfg=$t_fgpale guibg=NONE guifg=$fgpale
 "" Like LineNr when 'cursorline' is set and 'cursorlineopt' contains "number" or is "both", for the cursor line.
-hi! CursorLineNr cterm=bold ctermbg=$t_bgselection ctermfg=$t_fgcomment gui=bold guibg=$bgselection guifg=$fgcomment
+hi! CursorLineNr cterm=bold ctermbg=$t_bgselection ctermfg=$t_fg gui=bold guibg=$bgselection guifg=$fg
 "" The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
 hi! MatchParen ctermbg=$t_bgcyan guibg=$bgcyan
 "" 'showmode' message (e.g., "-- INSERT --")
@@ -205,7 +205,7 @@ hi! Ignore ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
 "" any erroneous construct
 hi! Error cterm=NONE ctermbg=NONE ctermfg=$t_red gui=NONE guibg=NONE guifg=$red
 "" anything that needs extra attention; mostly the keywords TODO FIXME and XXX
-hi! Todo cterm=NONE ctermbg=$t_bggreen ctermfg=$t_green gui=NONE guibg=$bggreen guifg=$green
+hi! Todo cterm=NONE ctermbg=$t_bggreen ctermfg=$t_absblack gui=NONE guibg=$bggreen guifg=$absblack
 "" -------------------------------------------------------------------
 "" diff
 hi! diffAdded ctermfg=$t_green guifg=$green
