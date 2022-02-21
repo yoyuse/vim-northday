@@ -8,7 +8,7 @@ init.vim
 
 ``` vim-script
 set background=light
-let g:lightline.colorscheme = 'northday'
+let g:lightline = {'colorscheme': 'northday'}
 colorscheme northday
 ```
 
