@@ -12,11 +12,11 @@ $fg:          #b3bbc3 # #b4bcc4 # #b3bbc3
 $absblack:    #2b333b
 
 $bgcursor:    #ffffff
-$bgedge:      #808890
-$bggradient:  #5e666e # #6f777f # #5d656d # #666e76
+$bgedge:      #7e8892 # #808890
+$bggradient:  #646e78 # #6f777f # #5d656d # #666e76
 $bgmodeline:  #5e666e
 $bgbase:      #4d555d # #4c545c # #4d555d
-$bgselection: #4d555d # #444c54 # #3c4650 # #444a50
+$bgselection: #404a54 # #444c54 # #3c4650 # #444a50
 $bgfringe:    #333b43 # #343c44 # #363e46 # #3c444c
 
 $fgbold:      #d5dde5

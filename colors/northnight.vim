@@ -1,6 +1,6 @@
 " File:       northnight.vim
 " Maintainer: yoyuse <yoyuse@gmail.com>
-" Modified:   2022-02-20 16:41+0900
+" Modified:   2022-02-21 10:51+0900
 " License:    MIT
 
 
@@ -39,18 +39,18 @@ hi! FoldColumn ctermbg=237 ctermfg=243 guibg=#333b43 guifg=#6f777f
 hi! SignColumn ctermbg=237 ctermfg=243 guibg=#333b43 guifg=#6f777f
 hi! IncSearch cterm=NONE ctermbg=104 ctermfg=236 gui=NONE guibg=#9999dd guifg=#2b333b
 hi! LineNr ctermbg=NONE ctermfg=240 guibg=NONE guifg=#4d555d
-hi! CursorLineNr cterm=bold ctermbg=240 ctermfg=250 gui=bold guibg=#4d555d guifg=#b3bbc3
+hi! CursorLineNr cterm=bold ctermbg=239 ctermfg=250 gui=bold guibg=#404a54 guifg=#b3bbc3
 hi! MatchParen ctermbg=109 guibg=#77aaaa
 hi! ModeMsg cterm=NONE ctermfg=108 gui=NONE guifg=#88aa99
 hi! MoreMsg cterm=NONE ctermfg=108 gui=NONE guifg=#88aa99
 hi! NonText ctermfg=240 guifg=#4d555d
 hi! Normal ctermbg=236 ctermfg=250 guibg=#2b333b guifg=#b3bbc3
-hi! Pmenu ctermbg=240 ctermfg=250 guibg=#4d555d guifg=#b3bbc3
+hi! Pmenu ctermbg=239 ctermfg=250 guibg=#404a54 guifg=#b3bbc3
 hi! PmenuSel ctermbg=104 ctermfg=236 guibg=#9999dd guifg=#2b333b
 hi! PmenuSbar ctermbg=102 guibg=#808890
 hi! PmenuThumb ctermbg=175 guibg=#cc99aa
 hi! Question ctermfg=108 guifg=#88aa99
-hi! QuickFixLine ctermbg=240 guibg=#4d555d
+hi! QuickFixLine ctermbg=239 guibg=#404a54
 hi! Search ctermbg=140 guibg=#bb99cc
 hi! SpecialKey ctermfg=240 guifg=#4d555d
 hi! SpellBad cterm=undercurl gui=undercurl guisp=#cc99aa
@@ -63,8 +63,8 @@ hi! TabLine cterm=NONE ctermbg=240 ctermfg=243 gui=NONE guibg=#4d555d guifg=#6f7
 hi! TabLineFill cterm=NONE ctermbg=240 ctermfg=NONE gui=NONE guibg=#4d555d guifg=NONE
 hi! TabLineSel cterm=NONE ctermbg=NONE ctermfg=NONE gui=NONE guibg=NONE guifg=NONE
 hi! Title cterm=NONE ctermfg=108 gui=NONE guifg=#88aa99
-hi! Visual ctermbg=240 guibg=#4d555d
-hi! VisualNOS ctermbg=240 guibg=#4d555d
+hi! Visual ctermbg=239 guibg=#404a54
+hi! VisualNOS ctermbg=239 guibg=#404a54
 hi! WarningMsg ctermbg=NONE ctermfg=140 guibg=NONE guifg=#bb99cc
 hi! Whitespace ctermfg=240 guifg=#4d555d
 hi! WildMenu ctermbg=104 ctermfg=236 guibg=#9999dd guifg=#2b333b
