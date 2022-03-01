@@ -27,7 +27,7 @@ $fgpale:      #4d555d # #4c545c # #5e666e
 $fgedge:      #2b333b # #2c343c # #4c545c
 
 $black:     #091119
-$white:     #808890
+$white:     #6f777f
 $red:       #cc99aa # #cc6688
 $orange:    #ccaa99 # #cc8866
 $yellow:    #99aa77 # #88aa44

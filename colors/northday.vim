@@ -1,6 +1,6 @@
 " File:       northday.vim
 " Maintainer: yoyuse <yoyuse@gmail.com>
-" Modified:   2022-02-27 14:01+0900
+" Modified:   2022-03-01 19:59+0900
 " License:    MIT
 
 
@@ -91,7 +91,7 @@ if has('nvim')
   let g:terminal_color_4 = '#5588bb'
   let g:terminal_color_5 = '#7777dd'
   let g:terminal_color_6 = '#44aaaa'
-  let g:terminal_color_7 = '#808890'
+  let g:terminal_color_7 = '#a2aab2'
   let g:terminal_color_8 = '#d5dde5'
   let g:terminal_color_9 = '#bb2255'
   let g:terminal_color_10 = '#117744'
@@ -101,7 +101,7 @@ if has('nvim')
   let g:terminal_color_14 = '#117777'
   let g:terminal_color_15 = '#091119'
 else
-  let g:terminal_ansi_colors = ['#e6eef6', '#cc6688', '#44aa77', '#88aa44', '#5588bb', '#7777dd', '#44aaaa', '#808890', '#d5dde5', '#bb2255', '#117744', '#557711', '#1166bb', '#4444cc', '#117777', '#091119']
+  let g:terminal_ansi_colors = ['#e6eef6', '#cc6688', '#44aa77', '#88aa44', '#5588bb', '#7777dd', '#44aaaa', '#a2aab2', '#d5dde5', '#bb2255', '#117744', '#557711', '#1166bb', '#4444cc', '#117777', '#091119']
 endif
 
 hi! link vimContinue Comment

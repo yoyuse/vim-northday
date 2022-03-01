@@ -1,6 +1,6 @@
 " File:       northnight.vim
 " Maintainer: yoyuse <yoyuse@gmail.com>
-" Modified:   2022-02-27 14:01+0900
+" Modified:   2022-03-01 19:59+0900
 " License:    MIT
 
 
@@ -91,7 +91,7 @@ if has('nvim')
   let g:terminal_color_4 = '#7799bb'
   let g:terminal_color_5 = '#9999dd'
   let g:terminal_color_6 = '#77aaaa'
-  let g:terminal_color_7 = '#808890'
+  let g:terminal_color_7 = '#6f777f'
   let g:terminal_color_8 = '#4d555d'
   let g:terminal_color_9 = '#ee88aa'
   let g:terminal_color_10 = '#66cc99'
@@ -101,7 +101,7 @@ if has('nvim')
   let g:terminal_color_14 = '#66cccc'
   let g:terminal_color_15 = '#e6eef6'
 else
-  let g:terminal_ansi_colors = ['#091119', '#cc99aa', '#88aa99', '#99aa77', '#7799bb', '#9999dd', '#77aaaa', '#808890', '#4d555d', '#ee88aa', '#66cc99', '#aacc66', '#77aadd', '#9999ff', '#66cccc', '#e6eef6']
+  let g:terminal_ansi_colors = ['#091119', '#cc99aa', '#88aa99', '#99aa77', '#7799bb', '#9999dd', '#77aaaa', '#6f777f', '#4d555d', '#ee88aa', '#66cc99', '#aacc66', '#77aadd', '#9999ff', '#66cccc', '#e6eef6']
 endif
 
 hi! link vimContinue Comment
