@@ -11,6 +11,7 @@ $bg:          #ffffff # hsl(210, 0%, 100%)
 $fg:          #2b333b # hsl(210, 16%, 20%)
 $absblack:    #2b333b # hsl(210, 16%, 20%)
 
+$cursoropacity: 0.25
 $bgcursor:    #091119 # hsl(210, 47%,  7%) # $brwhite
 $bgedge:      #808890 # hsl(210,  7%, 53%) # $white
 $bggradient:  #bcc4cc # hsl(210, 14%, 77%)

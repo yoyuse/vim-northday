@@ -1,6 +1,6 @@
 " File:       northday.vim
 " Maintainer: yoyuse <yoyuse@gmail.com>
-" Modified:   2022-02-20 16:41+0900
+" Modified:   2022-02-27 14:01+0900
 " License:    MIT
 
 

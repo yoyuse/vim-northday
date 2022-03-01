@@ -11,6 +11,7 @@ $bg:          #2b333b # #2c343c # #2b333b
 $fg:          #b3bbc3 # #b4bcc4 # #b3bbc3
 $absblack:    #2b333b
 
+$cursoropacity: 0.5
 $bgcursor:    #ffffff
 $bgedge:      #7e8892 # #808890
 $bggradient:  #646e78 # #6f777f # #5d656d # #666e76

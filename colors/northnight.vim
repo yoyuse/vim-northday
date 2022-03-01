@@ -1,6 +1,6 @@
 " File:       northnight.vim
 " Maintainer: yoyuse <yoyuse@gmail.com>
-" Modified:   2022-02-21 10:51+0900
+" Modified:   2022-02-27 14:01+0900
 " License:    MIT
 
 

@@ -1,3 +1,4 @@
+# 2022-02-27
 # 2022-02-18
 # 2022-02-12
 #
@@ -11,19 +12,31 @@
 
 MKVIM = mkvim.rb
 
+mkitermcolors = ./mkitermcolors.swift
+mkterminal = ./mkterminal.swift
+
 NAME = northday
 DARK = northnight
+
+.SUFFIXES: .Xresources .itermcolors .terminal
 
 usage:
 	@echo "usage: make [all | deploy]"
 
-all: $(NAME).vim $(NAME).lightline.vim $(DARK).vim $(DARK).lightline.vim
+all: vim lightline itermcolors terminal
+
+vim: $(NAME).vim $(DARK).vim
+lightline: $(NAME).lightline.vim $(DARK).lightline.vim
+itermcolors: $(NAME).itermcolors $(DARK).itermcolors
+terminal: $(NAME).terminal $(DARK).terminal
 
 deploy: all
 	cp $(NAME).vim ../colors/$(NAME).vim
 	cp $(NAME).lightline.vim ../autoload/lightline/colorscheme/$(NAME).vim
 	cp $(DARK).vim ../colors/$(DARK).vim
 	cp $(DARK).lightline.vim ../autoload/lightline/colorscheme/$(DARK).vim
+	cp $(NAME).itermcolors $(DARK).itermcolors ../extra/iTerm2/
+	cp $(NAME).terminal $(DARK).terminal ../extra/Terminal_app/
 
 $(NAME).vim: $(MKVIM) $(NAME).txt $(NAME).template.vim
 	ruby $(MKVIM) -d $(NAME).txt $(NAME).template.vim > $@
@@ -36,3 +49,15 @@ $(DARK).vim: $(MKVIM) $(DARK).txt $(NAME).template.vim
 
 $(DARK).lightline.vim: $(MKVIM) $(DARK).txt $(NAME).lightline.template.vim
 	ruby $(MKVIM) -d $(DARK).txt $(NAME).lightline.template.vim > $@
+
+$(NAME).Xresources: $(NAME).txt template.Xresources
+	ruby $(MKVIM) -d $(NAME).txt template.Xresources > $@
+
+$(DARK).Xresources: $(DARK).txt template.Xresources
+	ruby $(MKVIM) -d $(DARK).txt template.Xresources > $@
+
+.Xresources.itermcolors:
+	$(mkitermcolors) $^
+
+.Xresources.terminal:
+	$(mkterminal) $^
